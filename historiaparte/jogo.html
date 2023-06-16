@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jogo.css">
+    <script src="script.js"></script>
+    <title>Tudo sobre o Jogo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="imagens/logo.png" alt="logo" class="logo"></a>
+            <button id="openMenu">☰</button>
+            <nav class="navegation">
+                <button id="closeMenu">X</button>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="historia.html">história</a></li>
+                    <li><a href="jogo.html">Jogo</a></li>
+            </nav>
+        </header>
+
+
+    
+    <div class="container">
+
+        <div class="swiper mySwiper">
+                <h1 class="titulo">Cartas do proximo Patch!</h1>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="imagens/4.png" alt="Apple"></div>
+                  <div class="swiper-slide"><img src="imagens/5.png" alt="Next"></div>
+                  <div class="swiper-slide"><img src="imagens/8.png" alt="Ridley Scott"></div>
+                  <div class="swiper-slide"><img src="imagens/9.png" alt="John Draper"></div>
+                  <div class="swiper-slide"><img src="imagens/11.png" alt="Macintosh"></div>
+                  <div class="swiper-slide"><img src="imagens/12.png" alt="Windows"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+        
+        <div class="regras">
+            <h1>Como jogar</h1>
+            1- Antes de iniciar o jogo, as cartas devem ser embaralhadas completamente. <br>
+            <br>
+            2- Para que o jogo funcione corretamente, é necessário seguir os passos abaixo, após a seleção de uma carta por parte do jogador: <br>
+            <br>
+            a) O jogador 1 seleciona uma carta. <br>
+            b) O jogador 2 seleciona outra carta. <br>
+            c) Para que as cartas entrem em batalha, o jogador 1 deve pressionar a tecla correspondente à carta que ele jogou. <br>
+            <br>
+            3- Atribua as teclas correspondentes a cada uma das cartas do jogador 1: <br>
+            <br>
+            a) Bill Gates: Tecla G. <br>
+            b) Steve Jobs: Tecla S. <br>
+            c) Microsoft: Tecla M. <br>
+            d) Paul Allen: Tecla P. <br>
+            e) Daniel Kottke: Tecla D. <br>
+            f) John Sculley: Tecla J. <br>
+            g) Steve Wozniak: Tecla W. <br>
+            h) Steve Ballmer: Tecla B. <br>
+        </div>
+        
+        
+       
+    </div>
+    
+
+    <div class="icons">
+        <h3>CONECTE-SE CONOSCO</h3>
+        <li>
+            <a href="https://www.facebook.com"><img src="imagens/facebook.png" alt="icons"></a>
+            <a href="https://twitter.com"><img src="imagens/twitter.png" alt="icons"></a>
+            <a href="https://www.instagram.com"><img src="imagens/instagram.png" alt="icons"></a>
+        </li>
+    </div>
+
+    <div class="cartas-atual">
+        <h1>Cartas presentes no jogo</h1>
+        <div class="cartas">
+        <img src="imagens/2.png" alt="Steve Jobs">
+        <img src="imagens/3.png" alt="Bill Gates">
+        <img src="imagens/6.png" alt="Microsoft">
+        <img src="imagens/7.png" alt="Steve Ballmer">
+        <img src="imagens/10.png" alt="Steve Wozniak">
+        <img src="imagens/13.png" alt="John Sculley">
+        <img src="imagens/14.png" alt="Daniel Kottke">
+        <img src="imagens/15.png" alt="Paul Allen">
+    </div>
+
+    <button><a href="../index.html">Iniciar o Jogo</a></button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 10500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+    
+</html>

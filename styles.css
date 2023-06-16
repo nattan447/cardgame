@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Creepster", cursive;
+}
+
+body {
+  background-image: url(cardsimages/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-74 {
+  margin-left: 3%;
+  margin-top: 1%;
+  background-color: #3cd6eb;
+  border: 2px solid #333231;
+  border-radius: 30px;
+  box-shadow: #0f0f0f 4px 4px 0 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #3cd6eb;
+
+  margin-bottom: 2%;
+  font-size: 3rem;
+}
+
+#player1 {
+  font-size: 2rem;
+  z-index: -1;
+}
+#player2 {
+  font-size: 2rem;
+}
+#all {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#all img:hover {
+  filter: brightness(70%);
+  transform: scale(1.70);
+  cursor: pointer;
+
+  z-index: -1;
+}
+
+#all img {
+  padding: 25px;
+}
+
+#cu img {
+  padding: 25px;
+  border-radius: 25px;
+}
+
+#cu img:hover {
+  filter: brightness(70%);
+  transform: scale(1.70);
+  cursor: pointer;
+
+  z-index: -1;
+}
+
+#cu {
+  text-align: center;
+  margin-top: 1rem;
+}
+#btn-embaralhas {
+  border-style: none;
+  font-size: 1.1rem;
+}
+#btn-embaralhas:hover {
+  cursor: pointer;
+}
+#btn {
+  text-align: center;
+}
+.button-50 {
+  background-color: #1a264b;
+  border: none;
+  color: #3cd6eb;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  background-color: #007593;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #058b9c 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+img {
+  height: 16vw;
+}
+.foto {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  .button-50 {
+    padding: 12px 50px;
+  }
+  img{height: 50vw;}
+}
+
+
+/* @keyframes borda {
+  0% {
+    border-image-source: linear-gradient(
+      to right,
+      #f44336,
+      #ff9800,
+      #ffc107,
+      #ffeb3b
+    );
+  }
+  25% {
+    border-image-source: linear-gradient(
+      to right,
+      #ff9800,
+      #ffc107,
+      #ffeb3b,
+      #f44336
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      to right,
+      #ffc107,
+      #ffeb3b,
+      #f44336,
+      #ff9800
+    );
+  }
+  75% {
+    border-image-source: linear-gradient(
+      to right,
+      #ffeb3b,
+      #f44336,
+      #ff9800,
+      #ffc107
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      to right,
+      #f44336,
+      #ff9800,
+      #ffc107,
+      #ffeb3b
+    );
+  }
+} */

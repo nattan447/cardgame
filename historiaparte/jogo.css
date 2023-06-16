@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Creepster', cursive;
+  color: #fff;
+}
+
+:root {
+  --swiper-theme-color: #3CD6EB !important;
+  background-color: #121212;
+}
+
+#openMenu, #closeMenu {
+  color: #000000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #121212;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 17rem;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  top: 26.5rem !important;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #140f10;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .regras {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .cartas {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 8rem;
+    width: 10rem;
+  }
+
+  .cartas-atual {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+  }
+
+ 
+  .cartas-novas {
+    margin-bottom: 60px;
+  }
+  
+  .cartas-atual img,
+  .cartas-novas img {
+    width: 7rem;
+    height: auto;
+    margin: 0 10px;
+  }
+
+
+.cartas-atual img:hover {
+  filter: brightness(80%);
+  transform: scale(1.75);
+  cursor: pointer;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #3CD6EB;
+    font-size: 3rem;
+  }
+
+ 
+  button {
+    background-color: #3CD6EB; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover a borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    z-index: 1;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  }
+
+  .icons {
+    margin-top: -2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: #3CD6EB;
+  }
+
+  #openMenu, #closeMenu {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    background-color: #3CD6EB;
+}
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .cartas img {
+      width: calc(50% - 10px);
+      height: auto;
+      margin: 5px;
+    }
+    
+    .cartas {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .regras {
+      width: 70%;
+    }
+
+    .cartas-atual img:hover {
+      filter: brightness(80%);
+      transform: scale(2.80);
+      cursor: pointer;
+      transition: 0.7s;
+      z-index: 1;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      color: #3CD6EB;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #closeMenu {
+      position: fixed;
+      right: 15px;
+      top: -87px;
+    }
+
+    #openMenu {
+      margin-left: auto;
+      margin-top: auto;
+    }
+
+    button {
+      margin-top: 6rem;
+    }
+  }
+  
